@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Location.h"
+#import "LocationDataController.h"
 
 @interface ViewController ()
 
@@ -22,6 +24,27 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)FindParkingClick:(id)sender {
+    NSString *text = self.TextBox.text;
+    self.ParkViewTitle.text = text;
+   /* [self.TextBox resignFirstResponder];
+    */
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+/*    LocationDataController *model = [[LocationDataController alloc] init]
+     Location *poi = [model getPointOfMall];
+  */
+    /*self.addressLabel.text = poi.address;
+    [self.photoImageView setImage:[UIImage imageNamed:poi.photoFileName]];
+    */
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.TextBox resignFirstResponder];
 }
 
 @end
