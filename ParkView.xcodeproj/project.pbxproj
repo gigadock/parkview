@@ -14,11 +14,13 @@
 		8B12D2E71C99DF4E00260E51 /* NewSingleView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D2E51C99DF4E00260E51 /* NewSingleView.xcdatamodeld */; };
 		8B12D2E91C99DF4E00260E51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B12D2E81C99DF4E00260E51 /* Assets.xcassets */; };
 		8B12D2EC1C99DF4E00260E51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B12D2EA1C99DF4E00260E51 /* LaunchScreen.storyboard */; };
-		8B12D2F71C99DF4F00260E51 /* NewSingleViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D2F61C99DF4F00260E51 /* NewSingleViewTests.m */; };
+		8B12D2F71C99DF4F00260E51 /* ParkViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B12D2F61C99DF4F00260E51 /* ParkViewTests.m */; };
 		8BDF075B1CA31E000070D25E /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BDF075A1CA31E000070D25E /* Storyboard.storyboard */; };
 		8BDF075E1CA31E580070D25E /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF075D1CA31E580070D25E /* Location.m */; };
 		8BDF07611CA31EC10070D25E /* LocationDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF07601CA31EC10070D25E /* LocationDataController.m */; };
 		8BDF07641CA55B7E0070D25E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDF07631CA55B7E0070D25E /* MapViewController.m */; };
+		8BDF07651CA5B8E80070D25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B12D2E81C99DF4E00260E51 /* Assets.xcassets */; };
+		8BDF07671CA5B98A0070D25E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDF07661CA5B98A0070D25E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		8B12D2EB1C99DF4E00260E51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B12D2ED1C99DF4E00260E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B12D2F21C99DF4F00260E51 /* NewSingleViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewSingleViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B12D2F61C99DF4F00260E51 /* NewSingleViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewSingleViewTests.m; sourceTree = "<group>"; };
+		8B12D2F61C99DF4F00260E51 /* ParkViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkViewTests.m; sourceTree = "<group>"; };
 		8B12D2F81C99DF4F00260E51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8B12D3011CA0701000260E51 /* UIViewController_MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewController_MapView.h; sourceTree = "<group>"; };
 		8BDF075A1CA31E000070D25E /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		8BDF07601CA31EC10070D25E /* LocationDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDataController.m; sourceTree = "<group>"; };
 		8BDF07621CA55B7E0070D25E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		8BDF07631CA55B7E0070D25E /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		8BDF07661CA5B98A0070D25E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDF07671CA5B98A0070D25E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,7 @@
 		8B12D2CD1C99DF4E00260E51 = {
 			isa = PBXGroup;
 			children = (
+				8BDF07661CA5B98A0070D25E /* MapKit.framework */,
 				8BDF07621CA55B7E0070D25E /* MapViewController.h */,
 				8BDF07631CA55B7E0070D25E /* MapViewController.m */,
 				8B12D2D81C99DF4E00260E51 /* ParkView */,
@@ -129,7 +134,7 @@
 		8B12D2F51C99DF4F00260E51 /* ParkViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				8B12D2F61C99DF4F00260E51 /* NewSingleViewTests.m */,
+				8B12D2F61C99DF4F00260E51 /* ParkViewTests.m */,
 				8B12D2F81C99DF4F00260E51 /* Info.plist */,
 			);
 			name = ParkViewTests;
@@ -186,6 +191,11 @@
 					8B12D2D51C99DF4E00260E51 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = C8U5VAJ757;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8B12D2F11C99DF4F00260E51 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDF07651CA5B8E80070D25E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B12D2F71C99DF4F00260E51 /* NewSingleViewTests.m in Sources */,
+				8B12D2F71C99DF4F00260E51 /* ParkViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewSingleView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ppark.NewSingleView;
+				PRODUCT_BUNDLE_IDENTIFIER = ppark.ParkView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -384,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NewSingleView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ppark.NewSingleView;
+				PRODUCT_BUNDLE_IDENTIFIER = ppark.ParkView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

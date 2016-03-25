@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *ParkViewTitle;
 
+@property (strong, nonatomic) IBOutlet UIButton *FindParkingButton;
 
+@property (strong, nonatomic) IBOutlet UITextField *TextBox;
 @end
